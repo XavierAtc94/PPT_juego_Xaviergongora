@@ -21,6 +21,7 @@ while jugar:
         print ("Empates")
     elif (jugador == 1 and pc ==2) or (jugador == 2 and pc == 3) or (jugador ==3 and pc==1):
         print ("Perdiste")
+    else: print ("Ganaste")
     
 
     jugar = False
