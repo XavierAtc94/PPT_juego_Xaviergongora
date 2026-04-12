@@ -1,9 +1,9 @@
 import random #Para que el programa pueda generar numeros o listas aleatorios
 
-print("Piedra, papel o tijera") #Bienvenida del juego
+print("Piedra, papel o tijera") #Bienvenida del juego e inicio
 
 respuesta = input("\n¿Quieres jugar? (s/n): ") #Determino las opciones para jugar siendo s= sí y n= no
-jugar = respuesta.lower () == "s" #Variable jugar es s minuscula
+jugar = respuesta.lower () == "s" #Variable jugar es s minuscula , lowe convierte mayuculas a mainusculas
 
 while jugar:
     print("Elige: 1 = Piedra, 2 = Papel, 3 = Tijera") #determino las opciones que tiene el jugador
@@ -18,8 +18,11 @@ while jugar:
     print(f"Elegiste: {jugador}") #indica que eligió el jugador
     pc= random.randint (1,3) #genera un número aleatorio la pc
     if jugador == pc: #primer condicional, si son iguales da empate, usaremos elsif para lo siguiente
-        print ("Empate")
+        print ("Empates")
+    elif (jugador == 1 and pc ==2) or (jugador == 2 and pc == 3) or (jugador ==3 and pc==1):
+        print ("Perdiste")
     
+
     jugar = False
 
-print("Salir del juego")
+print("Saliendo")
