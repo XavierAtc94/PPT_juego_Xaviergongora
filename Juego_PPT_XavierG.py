@@ -17,11 +17,8 @@ while jugar:
     jugador = int(jugador) #ingresa como numero entero
     print(f"Elegiste: {jugador}") #indica que eligió el jugador
     pc= random.randint (1,3) #genera un número aleatorio la pc
-    if jugador == pc: #primer condicional, si son iguales da empate, usaremos elsif para lo siguiente
+    if jugador == pc: #primer condicional, si son iguales da empate, usaremos elif para lo siguiente
         print ("Empates")
-    elif (jugador == 1 and pc ==2) or (jugador == 2 and pc == 3) or (jugador ==3 and pc==1):
-        print ("Perdiste")
-    else: print ("Ganaste")
     
 
     jugar = False
