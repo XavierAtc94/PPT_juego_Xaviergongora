@@ -19,7 +19,7 @@ while jugar:
     pc= random.randint (1,3) #genera un número aleatorio la pc
     if jugador == pc: #primer condicional, si son iguales da empate, usaremos elif para lo siguiente
         print ("Empates")
-    elif (jugador==1 and pc==2) or (jugador==2 and pc==3) or (jugador==3 and pc==1):
+    elif (jugador==1 and pc==2) or (jugador==2 and pc==3) or (jugador==3 and pc==1):#opciones de perdida
         print ("Perdiste")
     
 
