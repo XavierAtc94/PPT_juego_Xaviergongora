@@ -1,12 +1,12 @@
 import random #Para que el programa pueda generar numeros o listas aleatorios
-opciones = {1: "🪨 Piedra",2: "📄 Papel",3: "✂️ Tijera"}
+opciones = {1: "🪨 Piedra",2: "📄 Papel",3: "✂️ Tijera"} #ingresamos un diccionario para que la jugabilidad sea más sencilla de entender
 print("Piedra, papel o tijera") #Bienvenida del juego e inicio
 
 respuesta = input("\n¿Quieres jugar? (s/n): ") #Determino las opciones para jugar siendo s= sí y n= no
 while respuesta not in ["s", "n"]: #condicional de opciones validas
         print("Opción inválida, escribe 's' o 'n'")
         respuesta = input("Intenta de nuevo: ").lower()
-jugar = respuesta.lower () == "s" #Variable jugar es s minuscula , lowe convierte mayuculas a mainusculas
+jugar = respuesta.lower () == "s" #Variable jugar es s minuscula , lower convierte mayuculas a mainusculas
 
 while jugar:
     print("Elige: 1 = Piedra, 2 = Papel, 3 = Tijera") #determino las opciones que tiene el jugador
