@@ -4,7 +4,7 @@
 ## 📅 Fecha
 Abril 2026
 
-## 🎯 Objetivo del programa
+## 🎯 Objetivo
 Crear un juego interactivo de "Piedra, Papel o Tijera" donde el usuario compite contra la computadora, con validaciones de entrada para evitar errores y la opción de jugar múltiples rondas.
 
 ## ⚙️ Principales funcionalidades
